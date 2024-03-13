@@ -1,0 +1,56 @@
+@import "../app/variables.module.scss";
+
+.smallCard {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    .indexNumber {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 10px;
+        padding: 10px;
+        background-color: #000;
+        color: #fff;
+        border-radius: 50%;
+        height: 12px;
+        width: 12px;
+    }
+    .cardContainer {
+        display: flex;
+        border: 1px solid $grey-color;
+        width: 100%;
+        padding: 5px;
+        border-radius: 8px;
+        .leftContainer {
+            display: flex;
+            align-items: center;
+            width: 70%;
+            border-right: 1px solid $grey-color;
+            .detailContainer {
+                margin-left: 10px;
+                .detailTop {
+                    font-size: 15px;
+                    .position {
+                        font-size: 12px;
+                    }
+                }
+                .detailBottom {
+                    font-size: 10px;
+                }
+            }
+        }
+        .rightContainer {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 30%;
+            .itemContainer {
+                font-size: 11px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+}

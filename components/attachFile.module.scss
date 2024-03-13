@@ -1,0 +1,27 @@
+@import "../app/variables.module.scss";
+
+.attachFile {
+    .header {
+        color: $light-color;
+    }
+    .imageContainer {
+        display: flex;
+        margin: 15px 0px;
+        .iconContainer {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 110px;
+            width: 110px;
+            margin-right: 10px;
+            background-color: $light-color;
+            color: $dark-color;
+        }
+    }
+    .uploadContainer{
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
+        color: $primary-color;
+    }
+}

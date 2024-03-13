@@ -1,0 +1,13 @@
+.subHeader {
+    padding: 0px 45px;
+    margin-bottom: 20px;
+    .topContainer {
+        display: flex;
+        justify-content: space-between;
+    }
+    .buttonContainer {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+}

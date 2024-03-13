@@ -1,0 +1,11 @@
+.page {
+    .content {
+        padding: 20px;
+        .cardContainer {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 20px;
+          justify-content: center;
+        }
+    }
+}

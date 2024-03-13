@@ -1,0 +1,98 @@
+@import "../variables.module.scss";
+
+.main {
+  .back {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $secondary-color;
+  }
+  .page {
+    padding: 15px;
+    .reportHeader {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 15px;
+      .leftContainer {
+        display: flex;
+        .accountIcon {
+          display: flex;
+          align-items: center;
+          margin-left: 10px;
+        }
+        .detailContainer {
+          margin-left: 20px;
+          .name {
+            font-weight: 600;
+            font-size: 18px;
+          }
+          .position {
+            font-size: 15px;
+          }
+        }
+      }
+      .rightContainer {
+        .timeContainer {
+          display: flex;
+          align-items: center;
+          justify-content: flex-end;
+          .timeText {
+            font-size: 12px;
+            color: $light-color;
+          }
+        }
+      }
+    }
+    .content {
+      .contentItem {
+        margin-bottom: 10px;
+        .title {
+          color: $light-color;
+        }
+      }
+    }
+  }
+  .summary {
+    display: flex;
+    padding: 15px 15px;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    background-color: $primary-light;
+    .summaryLeft {
+      display: flex;
+      justify-content: space-between;
+      width: 80%;
+      .summaryItem {
+        color: $light-color;
+        border-left: 1px solid $grey-color;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        &:first-child {
+          border-left: none;
+        }
+      }
+    }
+    .summaryRight {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: $primary-color;
+    }
+  }
+  .buttonContainer {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 15px;;
+    .button {
+      color: $primary-color;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40%;
+      padding: 7px 0;
+      border-radius: 30px;
+      border: 1px solid $primary-color;
+    }
+  }
+}

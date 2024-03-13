@@ -1,0 +1,121 @@
+@import "../app/variables.module.scss";
+
+.controllBar {
+    .headerTabContainer {
+        padding: 20px 0;
+        border-bottom: 1px solid $grey-color;
+        .headerTab {
+            display: flex;
+            .tabItem {
+                color: $dark-color;
+                border-left: 1px solid $grey-color;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                &.active {
+                    color: $primary-color;
+                }
+                &:first-child {
+                    border-left: none;
+                }
+            }
+        }
+    }
+    .controllerContainer {
+        display: flex;
+        margin-top: 20px;
+        .scaleDate {
+            display: flex;
+            width: 80%;
+            justify-content: space-around;
+            color: $grey-color;
+            box-shadow: 0 4px 6px -6px $shadow-color;
+            &.active {
+                color: #000;
+                border-bottom: 1px solid $primary-color;
+            }
+            .scaleItem {
+                padding: 0px 5px;
+                &.active {
+                    padding: 0px 5px;
+                    border-bottom: 2px solid $primary-color;
+                }
+            }
+        }
+        .interfaceControll {
+            display: flex;
+            width: 20%;
+            justify-content: space-around;
+        }
+    }
+    .dateControll {
+        display: flex;
+        .dateTabContainer {
+            display: flex;
+            width: 85%;
+            justify-content: space-between;
+            position: relative;
+            z-index: 3;
+            .iconContainer {
+                display: flex;
+                align-items: flex-end;
+                padding-bottom: 9px;
+            }
+            .dayItem {
+                display: flex;
+                justify-content: center;
+                padding: 9px;
+                border-radius: 50%;
+                box-sizing: border-box;
+                position: relative;
+                z-index: 3;
+                &.active {
+                    background-color: $primary-color;
+                    color: $secondary-color;
+                }
+                &.today {
+                    box-sizing: border-box; 
+                    border: 1px solid $primary-color;
+                    padding: 8px;
+                }
+                &.disable {
+                    color: $grey-color;
+                }
+            }
+            .weekyMask {
+                position: absolute;
+                width: 80%;
+                height: 45%;
+                bottom: 5%;
+                left: 10%;
+                border-radius: 15px;
+                background-color: $primary-light;
+                z-index: 0;
+            }
+        }
+        .todayButton {
+            width: 10%;
+            display: flex;
+            align-items: flex-end;
+            color: $primary-color;
+            font-size: 10px;
+            padding-bottom: 7px;
+            margin-bottom: 9px;
+        }
+    }
+    .bottomLine {
+        margin-top: 10px;
+        height: 1px;
+        background-color: $grey-color;
+    }
+    .downButton {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        border: 1px solid $dark-color;
+        border-radius: 50%;
+        background-color: #fff;
+        width: 24px;
+        height: 24px;
+    }
+}

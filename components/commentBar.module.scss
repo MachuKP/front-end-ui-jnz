@@ -1,0 +1,24 @@
+@import "../app/variables.module.scss";
+
+.commentBar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 0px;
+    border-top: 1px solid $grey-color;
+    .iconContainer {
+        color: $light-color;
+        width: 25%;
+        display: flex;
+        justify-content: space-around;
+        padding: 0 5px;
+    }
+    .commentContainer {
+        padding: 10px;
+        margin: 0 10px;
+        border: 1px solid $grey-color;
+        color: $grey-color;
+        border-radius: 20px;
+        width: 70%;
+    }
+}

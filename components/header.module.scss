@@ -1,0 +1,27 @@
+@import "../app/variables.module.scss";
+
+.header {
+    padding-top: 70px;
+    background-color: $primary-color;
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0px 10px 20px;
+        .textContainer {
+            display: flex;
+            align-items: center;
+            .title {
+                height: 1rem;
+                color: $secondary-color;
+            }
+            .iconContainer {
+                display: flex;
+                align-items: center;
+                margin-left: 25px;
+            }
+        }
+    }
+}
+
+

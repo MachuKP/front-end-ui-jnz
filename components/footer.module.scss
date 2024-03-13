@@ -1,0 +1,23 @@
+@import "../app/variables.module.scss";
+
+.footer {
+    padding: 35px;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid $grey-color;
+    .menu {
+        display: flex;
+        flex-direction: column;
+        color: $grey-color;
+        cursor: pointer;
+        &.active {
+            color: $primary-color;
+        }
+        .iconContainer {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 3px;
+        }
+    }
+}
